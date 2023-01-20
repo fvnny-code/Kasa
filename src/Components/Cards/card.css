@@ -1,0 +1,69 @@
+.accommodation-section {
+    width: 100%;
+    height: 100%;
+    max-width: 1240px;
+    min-width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--secondary-color);
+}
+
+.accommodation-container {
+    margin: 0;
+    padding: 56px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 56px;
+    column-gap: 50px;
+}
+
+.card-accommodation__content {
+    width: 340px;
+    height: 340px;
+    position: relative;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 769px) {
+    .accommodation-container {
+        row-gap: 20px;
+        column-gap: 20px;
+        padding: 20px 0;
+    }
+
+    .card-accommodation__content {
+        width: 335px;
+        height: 255px;
+    }
+
+}
+
+.card-accommodation__content:hover {
+    box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
+
+}
+
+.card-accommodation__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.card-accommodation__cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-accommodation__title {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
