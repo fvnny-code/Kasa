@@ -8,11 +8,10 @@ export default function Home() {
 
 
     return (
-        <div>
+        <>
             <Banner />
             <Card />
-            
-        </div>
+        </>
     )
 
 }
