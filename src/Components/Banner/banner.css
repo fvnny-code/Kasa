@@ -8,12 +8,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 20px; */
     margin:  20px auto;
-    background-color: rgba(black, black, black, 0.3);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../Assets/background-banner.png);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.30), 
+        rgba(0, 0, 0, 0.30)
+        ), url(../../Assets/background-banner.png);
 
 }
 

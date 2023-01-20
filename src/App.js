@@ -12,6 +12,9 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/location/:id" element={<Location />} /> */}
+          {/* création de la route pour accéder à la page Location */}
+
           <Route path="*" element={<Error />}/>
         </Routes>
       </main>

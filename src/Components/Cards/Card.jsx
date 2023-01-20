@@ -8,7 +8,7 @@ export default function Card({ cover, title }) { // on récupère les couverture
             <div className="accommodation-container">
                 {AccommodationList.map(({ id, cover, title }) =>
                     <article key={id} className="card-accommodation__content">
-                        <Link to={`/location?id=${id}`}>
+                        <Link to={`/location/${id}`}>
                             <div className="card-accommodation__bg"></div>
                             <img src={cover} alt="logement en location" className="card-accommodation__cover"/>
                             <p className="card-accommodation__title">{title}</p>
