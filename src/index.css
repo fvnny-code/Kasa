@@ -6,15 +6,15 @@
   --tertiary-color: #fff;
   --footer-color: #000;
   --background-color: rgba(0, 0, 0, 0.3);
-  /* --breakpoint-desktop: 769px; */
-
-}
-
-* {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  /* --breakpoint-desktop: 769px; */
+ 
+  
 }
 
 body {
-  max-width: 100%;
+  margin:0;
+  padding: 0;
+  width: 100%;
 }
