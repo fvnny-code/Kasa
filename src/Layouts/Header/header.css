@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 6rem;
+}
+
+.header-container__figure{
+    margin: 0;
+}
+.header-container__figure img {
+    width: 9rem;
+}
+
+@media screen and (max-width: 769px) {
+    .header-container {
+        margin: .9rem;
+    }
+    .header-container__figure {
+        margin: 0;
+    }
+    .header-container__figure img {
+        width: 6rem;
+    }
+}

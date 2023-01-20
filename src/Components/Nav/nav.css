@@ -1,0 +1,21 @@
+.nav-header {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.nav-header__link {
+    text-decoration: none;
+    padding-left: .8rem;
+    color: var(--primary-color);
+}
+
+.nav-header__link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 769px){
+    .nav-header__link{
+        text-transform: uppercase;
+    }
+
+}
