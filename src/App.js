@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Header from './Layouts/Header/Header'
 import Home from './Pages/Home/Home';
+import Accommodation from './Pages/AccommodationCard/Accomodation'
 import Footer from './Layouts/Footer/Footer'
 import Error from './Pages/Error/Error';
 
@@ -12,10 +13,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/location/:id" element={<Location />} /> */}
           {/* création de la route pour accéder à la page Location */}
+          <Route path="/location/:id" element={< Accommodation />} />
 
-          <Route path="*" element={<Error />}/>
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
       <Footer />
