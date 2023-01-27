@@ -35,6 +35,10 @@ h1{
   color: var(--tertiary-color);
 }
 
+button{
+  border: none;
+}
+
 @media screen and (max-width: 769px){
   main{
     margin: 5%;

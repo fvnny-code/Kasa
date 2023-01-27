@@ -51,7 +51,7 @@ export default function Accommodation() {
                 </div>
                 <div className="product-informations">
                     <Collapse  texte={product.description} title="Description" />
-                    <Collapse texte={listEquipments} title="Equipments" />
+                    <Collapse texte={listEquipments} title="Equipements" className="equipments"/>
                 </div>
             </div>
         </div>

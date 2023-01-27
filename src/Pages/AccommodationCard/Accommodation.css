@@ -58,3 +58,10 @@
     border-radius: 50%;
     margin: 0 .7rem;
 }
+.product-informations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}

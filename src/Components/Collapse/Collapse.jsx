@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Chevron from '../../Assets/chevron.svg';
+import './Collapse.css'
 
 export default function Collapse(props) {
 const [display, setDisplay] = useState("none");
@@ -13,8 +14,8 @@ function inputCollapse(){
 }
 
     return (
-        <>
-            <div className="collapse-container" onClick={inputCollapse}>
+        <div className="collapse-container">
+            <div className="collapse-block" onClick={inputCollapse}>
                 <h1 id="title">{props.title}</h1>
                 <button>
                     <img
@@ -30,7 +31,7 @@ function inputCollapse(){
             >
                 { props.texte }
             </div>
-        </>
+        </div>
     );
 
 }
