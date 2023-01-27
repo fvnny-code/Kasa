@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 import products from "../../Data/accommodations.json";
 import Ratings from "../../Components/Ratings/Ratings"
+import Collapse from '../../Components/Collapse/Collapse';
 import Error from '../Error/Error';
 
 import './Accommodation.css'
@@ -23,7 +24,7 @@ export default function Accommodation() {
         );
     }
 
-    // const listEquipments = product.equipments.map((e) => <li key={e}>{e}</li>);
+    const listEquipments = product.equipments.map((e) => <li key={e}>{e}</li>);
     return (
 
         <div className="product">
@@ -49,8 +50,8 @@ export default function Accommodation() {
                     </div>
                 </div>
                 <div className="product-informations">
-                    {/* <Collapse categorie = "product" title="Description" content={description} /> */}
-                    {/* <Collapse categorie = "product" title="Equipments" content={equipments} /> */}
+                    <Collapse  texte={product.description} title="Description" />
+                    <Collapse texte={listEquipments} title="Equipments" />
                 </div>
             </div>
         </div>
