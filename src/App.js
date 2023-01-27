@@ -1,10 +1,13 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Header from './Layouts/Header/Header'
 import Home from './Pages/Home/Home';
 import Accommodation from './Pages/AccommodationCard/Accomodation'
-import Footer from './Layouts/Footer/Footer'
 import Error from './Pages/Error/Error';
+
+import Header from './Layouts/Header/Header'
+import Footer from './Layouts/Footer/Footer'
+
 
 function App() {
   return (
@@ -13,7 +16,6 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* création de la route pour accéder à la page Location */}
           <Route path="/location/:id" element={< Accommodation />} />
 
           <Route path="*" element={<Error />} />
