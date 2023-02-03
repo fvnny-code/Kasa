@@ -65,3 +65,26 @@
     justify-content: space-between;
    
 }
+
+@media screen and (max-width:769px){
+    .product-content-left__title{
+        font-size: 25px;
+    }
+.rating img{
+    width:20px;
+}
+
+    .product-content-right{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100% ;
+        margin: 1rem 0;
+    }
+    .host,
+    .host img {
+        width: 50%;
+    }
+
+}

@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import Ratings from "../../Components/Ratings/Ratings"
 import Collapse from '../../Components/Collapse/Collapse';
 import Error from '../Error/Error';
+import Slider from '../../Components/Slider/Slider';
 
 import './Accommodation.css'
 import { getAccommodationById } from '../../Api/Accommodations.api';
@@ -22,7 +23,7 @@ export default function Accommodation() {
     }
     useEffect(() => {
         loadAccommodation();
-    }, [id]);
+    });
 
 
     if (hasLoaded && !product) {
@@ -37,7 +38,7 @@ export default function Accommodation() {
         <div className="product">
             {(hasLoaded && product) && (
                 <>
-                    {/* <Slider /> */}
+                    <Slider />
                     <div className="product-content">
                         <div className="product-content-left">
                             <h1 className="product-content-left__title">{product.title}</h1>
