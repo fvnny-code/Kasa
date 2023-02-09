@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import Data from '../../Data/accommodations.json';
 
 import Left from '../../Assets/chevron-left.svg'
 import Right from '../../Assets/chevron-right.svg'
 
 import './Slider.css';
 
-export default function Slider() {
-    const { id } = useParams();
-    const foundItem = Data.find((object) => object.id === id);
-    const pictures = foundItem.pictures;
+export default function Slider({ pictures }) {
+
 
     // Index du premier slide initialisé à 0
     const [current, setCurrent] = useState(0);
@@ -37,26 +33,19 @@ export default function Slider() {
                 alt="chevron vers la droite"
                 onClick={nextSlide}
                 className="chevronRight" />
-                {/* récupération et affichage des images */}
-                {pictures.map((img, index)=> {
-                    return(
-                        <div key={index}>
-                            {index ===current &&(
-                                <img 
-                                src={img}
-                                alt=" Photos de logement en location"
-                                className='slider-image'
-                                />
-                            )}
-                            {index === current && (
-                                <strong className='image-number'>
-                                    {current +1}/{pictures.length}
-                                </strong>
-                            )}
-                        </div>
-                    );
-                })}
+            {/* récupération et affichage des images */}
 
+            <div>
+                <img
+                    src={pictures[current]}
+                    alt=" Photos de logement en location"
+                    className='slider-image'
+                />
+                <strong className='image-number'>
+                    {current + 1}/{pictures.length}
+                </strong>
+
+            </div>
         </section>
     )
 

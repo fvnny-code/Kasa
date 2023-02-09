@@ -38,7 +38,7 @@ export default function Accommodation() {
         <div className="product">
             {(hasLoaded && product) && (
                 <>
-                    <Slider />
+                    <Slider pictures={product.pictures}/>
                     <div className="product-content">
                         <div className="product-content-left">
                             <h1 className="product-content-left__title">{product.title}</h1>

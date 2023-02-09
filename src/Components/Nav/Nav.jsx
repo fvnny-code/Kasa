@@ -5,7 +5,7 @@ export default function Nav(){
     return (
         <nav className="nav-header">
             <Link to="/" className='nav-header__link'>Accueil</Link>
-            <Link to="/" className='nav-header__link'>A propos</Link>
+            <Link to="/about" className='nav-header__link'>A propos</Link>
         </nav>
     )
 }
