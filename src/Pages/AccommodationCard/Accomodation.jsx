@@ -24,15 +24,11 @@ export default function Accommodation() {
     useEffect(() => {
         loadAccommodation();
     });
-
-
     if (hasLoaded && !product) {
         return (
             <Error />
         );
     }
-
-
     return (
 
         <div className="product">

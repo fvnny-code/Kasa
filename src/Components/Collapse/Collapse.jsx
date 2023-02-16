@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import Chevron from '../../Assets/chevron.svg';
 import './Collapse.css'
 
-export default function Collapse(props) {
+export default function Collapse({title, id, texte, size ="m"}) {
 const [display, setDisplay] = useState("none");
 const [isActive, setIsActive] = useState("");
 const [rotate, setRotate] = useState("180deg");
+
 
 function inputCollapse(){
     setIsActive(isActive === "" ? "0deg" : "180deg");
@@ -14,9 +15,9 @@ function inputCollapse(){
 }
 
     return (
-        <div className="collapse-container">
+        <div className={`collapse-container collapse-container-${size}`}>
             <div className="collapse-block" onClick={inputCollapse}>
-                <h1 id="title">{props.title}</h1>
+                <h1 id="title">{title}</h1>
                 <button>
                     <img
                         className="chevron"
@@ -26,10 +27,10 @@ function inputCollapse(){
                 </button>
             </div>
             <div className={`texte ${isActive}`}
-                key={props.id}
+                key={id}
                 style= {{ display: `${display}` }}
             >
-                { props.texte }
+                { texte }
             </div>
         </div>
     );

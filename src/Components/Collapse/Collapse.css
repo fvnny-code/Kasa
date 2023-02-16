@@ -1,12 +1,17 @@
 .collapse-container {
     display: flex;
     flex-direction: column;
+   
 
-    width: 47%;
+  
 
 }
-
-
+.collapse-container-m {
+    width: 47%;
+}
+.collapse-container-l {
+    width: 80%;
+}
 
 .collapse-block {
     display: flex;

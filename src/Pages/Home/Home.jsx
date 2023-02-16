@@ -9,7 +9,10 @@ export default function Home() {
 
     return (
         <>
-            <Banner />
+            <Banner 
+            title={"Chez vous, partout et ailleurs"} 
+            imageName={"home"}
+            />
             <Card />
         </>
     )

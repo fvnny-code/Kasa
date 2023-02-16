@@ -9,13 +9,21 @@
     align-items: center;
     justify-content: center;
     margin:  20px auto;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
+
+}
+
+.img-home {
     background: linear-gradient(
         rgba(0, 0, 0, 0.30), 
         rgba(0, 0, 0, 0.30)
         ), url(../../Assets/background-banner.png);
+}
 
+.img-about {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.30), 
+        rgba(0, 0, 0, 0.30)
+        ), url(../../Assets/banner-about.png);
 }
 
 .banner-title {

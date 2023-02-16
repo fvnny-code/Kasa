@@ -1,10 +1,12 @@
 import './banner.css';
 
-export default function Banner() {
+export default function Banner({title, imageName}) {
+
+
     return (
-        <div className="banner-container">
+        <div className={`banner-container img-${imageName} `}>
             <h1 className="banner-title">
-                Chez vous, partout et ailleurs
+              {title}
             </h1>
             
         </div>
