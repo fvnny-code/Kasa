@@ -1,6 +1,0 @@
-lien vers le repository GitHub :
-https://github.com/fvnny-code/Kasa
-
-
-lien vers les maquettes Figma :
-https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1

@@ -1,33 +1,14 @@
-// import React, { useState, useEffect } from 'react';
-// import { useParams } from "react-router-dom";
+
 
 import Banner from '../../Components/Banner/Banner'
 import Collapse from '../../Components/Collapse/Collapse'
-// import Error from '../Error/Error'
 
-// import { getAboutDataById } from '../../Api/About.api'
 
 import './About.css'
 import '../../Components/Collapse/Collapse.css'
 
 export default function About() {
-    // const { id } = useParams();
-    // const [rule, setRule] = useState(null);
-    // const [hasLoaded, setHasLoaded] = useState(false); // vérifier si le produit a été loadé
 
-    // async function loadAboutRules() {
-    //     const rule = await getAboutDataById(id)
-    //     setRule(rule);
-    //     setHasLoaded(true);
-    // }
-    // useEffect(() => {
-    //     loadAboutRules();
-    // });
-    // if (hasLoaded && !rule) {
-    //     return (
-    //         <Error />
-    //     );
-    // }
     function AboutItems() {
         const Items = [
             {
@@ -63,8 +44,8 @@ export default function About() {
     return (
         <>
             <div className='about-container'>
-                <Banner 
-                imageName={"about"}
+                <Banner
+                    imageName={"about"}
                 />
                 <div className='about-informations'>
                     {Items.map((item) => {
@@ -83,34 +64,5 @@ export default function About() {
 
         </>
     )
-
-    // return (
-    //     <div>
-    //         {(hasLoaded && rule) && (
-    //             <>
-
-    //                 <main className='about-container'>
-
-    //                     <div className='about-banner'>
-    //                         <img src={BannerImg} alt="Paysages de somments enneigés" />
-    //                     </div>
-
-    //                     <div className='about-informations'>
-    //                         <Collapse text={rule.aboutTitle} title="Fiabilité" />
-    //                         <Collapse text={rule.aboutTitle} title="Respect" />
-    //                         <Collapse text={rule.aboutTitle} title="Service" />
-    //                         <Collapse text={rule.aboutTitle} title="Sécurité" />
-
-    //                     </div>
-
-
-    //                 </main>
-
-
-    //             </>
-    //         )}
-    //     </div>
-    // )
-
 
 }

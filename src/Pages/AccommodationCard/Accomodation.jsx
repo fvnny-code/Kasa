@@ -13,7 +13,7 @@ import { getAccommodationById } from '../../Api/Accommodations.api';
 export default function Accommodation() {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
-    const [hasLoaded, setHasLoaded] = useState(false); // vérifier si le produit a été loadé
+    const [hasLoaded, setHasLoaded] = useState(false); // vérifie si le produit a été loadé
 
     async function loadAccommodation() {
         const accommodation = await getAccommodationById(id)

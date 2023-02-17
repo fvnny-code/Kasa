@@ -1,9 +1,6 @@
 .collapse-container {
     display: flex;
-    flex-direction: column;
-   
-
-  
+    flex-direction: column; 
 
 }
 .collapse-container-m {
@@ -37,12 +34,6 @@
 
 }
 
-/* .chevron {
-    height: 30px;
-    width: 30px;
-    rotate: 180deg;
-    cursor: pointer;
-} */
 .collapse-container li {
     list-style: none;
     justify-self: flex-start;
