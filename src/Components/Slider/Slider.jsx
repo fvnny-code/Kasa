@@ -24,15 +24,21 @@ export default function Slider({ pictures }) {
 
     return (
         <section id='slide-container'>
-            {/* Affichage des flèches de défilement */}
-            <img src={Left}
-                alt="chevron vers la gauche"
-                onClick={prevSlide}
-                className="chevronLeft" />
-            <img src={Right}
-                alt="chevron vers la droite"
-                onClick={nextSlide}
-                className="chevronRight" />
+            {/* Affichage des flèches de défilement uniquement s'il y a plus d'une photo */}
+            {pictures.length > 1 && (
+                <img src={Left}
+                    alt="chevron vers la gauche"
+                    onClick={prevSlide}
+                    className="chevronLeft" />
+            )}
+            {pictures.length > 1 && (
+                <img src={Right}
+                    alt="chevron vers la droite"
+                    onClick={nextSlide}
+                    className="chevronRight" />
+            )}
+
+
             {/* récupération et affichage des images */}
 
             <div>
