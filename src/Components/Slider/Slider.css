@@ -40,9 +40,9 @@
 .image-number {
     font-size: 15px;
     color: #fff;
-    position: relative;
+    position: absolute;
     left: 50%;
-    bottom: 20%;
+    top: 86%;
 }
 
 @media screen and (max-width:769px) {
