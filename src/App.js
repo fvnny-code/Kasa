@@ -1,12 +1,10 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 
-import Home from './Pages/Home/Home';
-import Accommodation from './Pages/AccommodationCard/Accomodation';
-import Error from './Pages/Error/Error';
-import About from './Pages/About/About';
+
+
 import Header from './Layouts/Header/Header';
 import Footer from './Layouts/Footer/Footer';
+import Router from './Router';
 
 
 function App() {
@@ -14,12 +12,7 @@ function App() {
     <div className='app'>
       <Header />
       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/location/:id" element={<Accommodation />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
+       < Router />
       </main>
       <Footer />
     </div>
