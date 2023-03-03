@@ -38,7 +38,9 @@
     list-style: none;
     justify-self: flex-start;
 }
-
+.chevron {
+    cursor : pointer;
+}
 .texte {
 
     width: 100%;

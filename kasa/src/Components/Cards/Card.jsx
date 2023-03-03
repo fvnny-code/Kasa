@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { AccommodationList } from '../../Data/AccommodationList';
 import './card.css'
 
-export default function Card({ cover, title }) { // on récupère les couvertures et titres des card depuis les data
-   
+export default function Card() { 
    
     return (
         <main className="accommodation-section">
