@@ -15,7 +15,7 @@ export default function Slider({ pictures }) {
     const nextSlide = () => {
         setCurrent(current === pictures.length - 1 ? 0 : current + 1)
     }
-    //Si on est eu premier slide, le précédent sera le dernier de la liste  
+    //Si on est au premier slide, le précédent sera le dernier de la liste  
     const prevSlide = () => {
         setCurrent(current === 0 ? pictures.length - 1 : current - 1)
     }
